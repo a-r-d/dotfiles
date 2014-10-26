@@ -18,6 +18,7 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 
 # Note: osx specific:
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+alias web='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
 # OSX apache things.
 alias apacheEdit='sudo edit /etc/httpd/httpd.conf'      # apacheEdit:       Edit httpd.conf
