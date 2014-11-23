@@ -127,19 +127,32 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
 
 #   ii:  display useful host related informaton
 #   -------------------------------------------------------------------
-    ii() {
-        echo -e "\nYou are logged on ${RED}$HOST"
-        echo -e "\nAdditionnal information:$NC " ; uname -a
-        echo -e "\n${RED}Users logged on:$NC " ; w -h
-        echo -e "\n${RED}Current date :$NC " ; date
-        echo -e "\n${RED}Machine stats :$NC " ; uptime
-        echo -e "\n${RED}Current network location :$NC " ; scselect
-        echo -e "\n${RED}Public facing IP Address :$NC " ;myip
-        #echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
-        echo
-    }
+  ii() {
+      echo -e "\nYou are logged on ${RED}$HOST"
+      echo -e "\nAdditionnal information:$NC " ; uname -a
+      echo -e "\n${RED}Users logged on:$NC " ; w -h
+      echo -e "\n${RED}Current date :$NC " ; date
+      echo -e "\n${RED}Machine stats :$NC " ; uptime
+      echo -e "\n${RED}Current network location :$NC " ; scselect
+      echo -e "\n${RED}Public facing IP Address :$NC " ;myip
+      #echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
+      echo
+  }
 
 
+#
+#  NPM globals on a new system
+#
+
+  npmglobals() {
+    echo "Installing npm modules globally:"
+    sudo npm install -g bower
+    sudo npm install -g ember-cli
+    sudo npm install -g node-debug
+    sudo npm install -g grunt-cli
+    sudo npm install -g cordova
+    sudo npm install -g express-generator
+  }
 
 
 
