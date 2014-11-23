@@ -150,6 +150,7 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
     sudo npm install -g ember-cli
     sudo npm install -g node-debug
     sudo npm install -g grunt-cli
+    sudo npm install -g gulp
     sudo npm install -g cordova
     sudo npm install -g express-generator
   }
