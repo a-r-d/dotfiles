@@ -59,7 +59,12 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 #   ---------------------------
 
 
-alias qfind="find . -name "                 # qfind:    Quickly search for file
+alias qfind="find . -iname "                 # qfind:    Quickly search for file
+
+dfind () {
+    echo "Directory find, case insensitive, wildcarded contains search:"
+    find -type d -iname "*$1*"
+}
 
 #most commonly used grep
   gr () {
