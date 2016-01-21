@@ -130,17 +130,19 @@ ii() {
 
 npmglobals() {
   echo "Installing npm modules globally:"
-  sudo npm install -g n
   sudo npm install -g bower
   sudo npm install -g node-debug
   sudo npm install -g grunt-cli
   sudo npm install -g gulp
   sudo npm install -g express-generator
   sudo npm install -g yo
+
 }
 
-###
-refreshcube() {
+
+
+### worj dev env
+pullcube() {
   CUBE_DIR="C:/Development/gitproj/cube-env/"
   cd $CUBE_DIR
 
@@ -163,6 +165,7 @@ refreshcube() {
   cd cube-resources
   git pull upstream master
   cd ..
+
 }
 
 # Git opts
@@ -173,4 +176,25 @@ configgit() {
   git config --global http.sslVerify false
   # save password, for HTTPS access
   git config --global credential.helper store
+}
+
+pulldynamis() {
+
+  DYNAMIS_DIR="C:/Development/gitproj/Dynamis"
+  cd $DYNAMIS_DIR
+  git stash
+  git pull upstream master
+  git stash apply
+
+  echo "Done with dynamis update"  
+
+}
+
+pushdynamisorigin() {
+
+  DYNAMIS_DIR="C:/Development/gitproj/Dynamis"
+  cd $DYNAMIS_DIR
+
+  git push origin master
+
 }
