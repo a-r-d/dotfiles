@@ -140,33 +140,142 @@ npmglobals() {
 }
 
 
+CUBE_DIR="C:/Development/gitproj/cube-env/"
 
 ### worj dev env
-pullcube() {
-  CUBE_DIR="C:/Development/gitproj/cube-env/"
+pullcubemaster() {
   cd $CUBE_DIR
-
+  
+  echo "Cube common"
   cd cube-common
+  git checkout master
   git pull upstream master
   cd ..
 
+  echo "Cube Impl"
+  cd cube-impl
+  git checkout master
+  git pull upstream master
+  cd ..
+
+  echo "Cube WS Clients"
+  cd cube-ws-clients
+  git checkout master
+  git pull upstream master
+  cd ..
+
+  echo "Cube mt container"
+  cd cube-mt-container
+  git checkout master
+  git pull upstream master
+  cd ..
+
+  echo "Cube resources"
+  cd cube-resources
+  git checkout master
+  git pull upstream master
+  cd ..
+}
+
+
+### worj dev env
+pullcube() {
+  cd $CUBE_DIR
+
+  echo "Cube common"
+  cd cube-common
+
+  git pull upstream master
+  cd ..
+
+  echo "Cube Impl"
   cd cube-impl
   git pull upstream master
   cd ..
 
+  echo "Cube WS Clients"
   cd cube-ws-clients
   git pull upstream master
   cd ..
 
+  echo "Cube mt container"
   cd cube-mt-container
   git pull upstream master
   cd ..
 
+  echo "Cube resources"
   cd cube-resources
   git pull upstream master
   cd ..
-
 }
+
+
+pushcubeoriginmaster() {
+  cd $CUBE_DIR
+
+  echo "Cube common"
+  cd cube-common
+  git checkout master
+  git push origin master
+  cd ..
+
+  echo "Cube Impl"
+  cd cube-impl
+  git checkout master
+  git push origin master
+  cd ..
+
+  echo "Cube WS Clients"
+  cd cube-ws-clients
+  git checkout master
+  git push origin master
+  cd ..
+
+  echo "Cube mt container"
+  cd cube-mt-container
+  git checkout master
+  git push origin master
+  cd ..
+
+  echo "Cube resources"
+  cd cube-resources
+  git checkout master
+  git push origin master
+  cd ..
+}
+
+
+pushcubeorigincurrent() {
+  cd $CUBE_DIR
+
+  echo "Cube common"
+  cd cube-common
+  git push
+  cd ..
+
+  echo "Cube Impl"
+  cd cube-impl
+  git push
+  cd ..
+
+  echo "Cube WS Clients"
+  cd cube-ws-clients
+  git push
+  cd ..
+
+  echo "Cube mt container"
+  cd cube-mt-container
+  git push
+  cd ..
+
+  echo "Cube resources"
+  cd cube-resources
+  git push
+  cd ..
+}
+
+
+
 
 # Git opts
 configgit() {
