@@ -52,10 +52,7 @@ dfind () {
 }
 
 #most commonly used grep
-gr () {
-  echo "Doing recursive grep on '$1'..."
-  grep -ri $1 .
-}
+
 
 #   ---------------------------
 #   5.  PROCESS MANAGEMENT
@@ -140,12 +137,23 @@ npmglobals() {
 }
 
 
+
+#################################
+#### WORK STUFF
+#################################
+
 CUBE_DIR="C:/Development/gitproj/cube-env/"
+DYNAMIS_DIR="C:/Development/gitproj/Dynamis"
+
+mklinks() {
+  ln -s $DYNAMIS_DIR dynamis
+  ln -s $CUBE_DIR cube
+}
 
 ### worj dev env
 pullcubemaster() {
   cd $CUBE_DIR
-  
+
   echo "Cube common"
   cd cube-common
   git checkout master
@@ -288,22 +296,17 @@ configgit() {
 }
 
 pulldynamis() {
-
-  DYNAMIS_DIR="C:/Development/gitproj/Dynamis"
   cd $DYNAMIS_DIR
   git stash
   git pull upstream master
   git stash apply
 
-  echo "Done with dynamis update"  
+  echo "Done with dynamis update"
 
 }
 
 pushdynamisorigin() {
-
-  DYNAMIS_DIR="C:/Development/gitproj/Dynamis"
   cd $DYNAMIS_DIR
-
   git push origin master
 
 }
