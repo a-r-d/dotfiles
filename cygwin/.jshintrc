@@ -1,20 +1,27 @@
 {
   "bitwise": true,
   "browser": true,
-  "curly": true,
   "eqeqeq": true,
   "esnext": true,
   "latedef": true,
   "noarg": true,
   "node": true,
-  "strict": false,
   "undef": true,
   "unused": true,
   "globals": {
     "angular": false,
     "_": false,
-    "RA": false
+    "RA": false,
+    "$": false,
+    "rpmUiMap": false,
+    "confirm": false,
+    "async": false
   },
+  "strict": false,
   "laxbreak": false,
-  "asi": true
+  "asi": true,
+  "maxstatements": 50,
+  "curly": false,
+  "maxparams": 4,
+  "maxerr" : 999
 }
