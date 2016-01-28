@@ -17,13 +17,16 @@ set tabstop=2
 """""""""""""""""""""""""""""""""""""
 set number
 
-
+" this is pretty ugly with JS / JSON
+"set background=dark
+"colorscheme solarized
+let g:airline_theme="kalisi"
 
 """""""""""""""""""""""""""""""""""""
 "" Plugins configs
 autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
-
+let g:NERDTreeWinPos = "left"
 
 let g:gitgutter_enabled=1
 let g:gitgutter_realtime = 1
@@ -34,6 +37,7 @@ let g:gitgutter_sign_removed = '--'
 
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
+let g:airline#extensions#tabline#enabled = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 """" shortcuts to normal copy paste behavior
