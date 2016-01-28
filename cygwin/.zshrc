@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bureau"
 #ZSH_THEME="agnoster" # doesnt work on cygwin
 
 # Uncomment the following line to use case-sensitive completion.
@@ -83,3 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# allow ctr-c + ctrl-v shortcuts in vim
+# allow ctrl-s shortcut in vim:
+stty -ixon
+
+#### Allow Ctrl+C and Ctrl V
+# http://www.saltycrane.com/blog/2008/05/how-to-paste-in-cygwin-bash-using-ctrl/
+#stty lnext ^q stop undef start undef
