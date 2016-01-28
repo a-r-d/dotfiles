@@ -59,6 +59,7 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ### linux
 
+
 ```
 sudo apt-get update
 sudo apt-get install -y git git-core nodejs npm memcached
