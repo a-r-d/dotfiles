@@ -19,9 +19,10 @@ Clone to home first
   # setup zsh
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   cp dotfiles/nix/. . -R
+  # or: cp ~/dotfiles/nix/.zshrc ~/.zshrc  
   chsh -s /bin/zsh
 
-  # setup vim
+  # setup vim or refresh install
   git clone https://github.com/amix/vimrc.git ~/.vim_runtime
   cd ~
   sh ~/.vim_runtime/install_awesome_vimrc.sh
@@ -47,13 +48,6 @@ All kinds of good configs:
 https://github.com/garybernhardt/dotfiles
 
 
-### Refresh plugins
-```
-cd ~
-cp dotfiles/nix/. . -R
-sh ~/.vim_runtime/install_awesome_vimrc.sh
-```
-
 
 
 ## Fresh install commands
@@ -67,7 +61,7 @@ sudo apt-get install -y git git-core nodejs npm memcached
 sudo npm i -g n
 sudo n stable
 sudo npm i -g bower grunt-cli yo
-sudo apt-get install vim-gtk chromium-browser wget zsh ctags
+sudo apt-get install vim-gtk chromium-browser wget zsh ctags tree
 cd ~
 mkdir projects
 

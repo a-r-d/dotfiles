@@ -14,12 +14,16 @@ set tabstop=2
 
 """""""""""""""""""""""""""""""""""""
 " editor styling
-""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""
 set number
 
 
-"" Plugins
+
+"""""""""""""""""""""""""""""""""""""
+"" Plugins configs
 autocmd vimenter * NERDTree
+let NERDTreeShowHidden=1
+
 
 let g:gitgutter_enabled=1
 let g:gitgutter_realtime = 1
@@ -31,16 +35,17 @@ let g:gitgutter_sign_removed = '--'
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 
-
-"""" shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""
+"""" shortcuts to normal copy paste behavior
 
 vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
-
-
-
+"""""" quick save
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
 
 
