@@ -71,18 +71,33 @@ All kinds of good configs:
 https://github.com/garybernhardt/dotfiles
 
 
-### Additional Vim Plugins
+## Additional Vim Plugins
+
+Indent line is a way of showing whitespace.
+
 ```bash
 cd ~/.vim_runtime/sources_non_forked
+## line indentation
 git clone https://github.com/Yggdroot/indentLine
+```
 
+Auto completion research:
+https://github.com/ervandew/supertab
+https://github.com/Valloric/YouCompleteMe.git
+
+```
+## with javascript code completion
+git clone https://github.com/Valloric/YouCompleteMe.git
+cd YouCompleteMe
+git submodule update --init --recursive  
+# at this point you must have CMake installed
+python install.py --tern-completer
 ```
 
 
 ## Fresh install commands
 
 ### linux
-
 
 ```bash
 sudo apt-get update
