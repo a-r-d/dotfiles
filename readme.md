@@ -25,6 +25,7 @@ Clone to home first
   git clone https://github.com/amix/vimrc.git ~/.vim_runtime
   cd ~
   sh ~/.vim_runtime/install_awesome_vimrc.sh
+  cp ~/dotfiles/nix/.vim_runtime/my_configs.vim ~/.vim_runtime/my_configs.vim
 
 ```
 
@@ -66,7 +67,7 @@ sudo apt-get install -y git git-core nodejs npm memcached
 sudo npm i -g n
 sudo n stable
 sudo npm i -g bower grunt-cli yo
-sudo apt-get install vim chromium-browser wget zsh ctags
+sudo apt-get install vim-gtk chromium-browser wget zsh ctags
 cd ~
 mkdir projects
 
