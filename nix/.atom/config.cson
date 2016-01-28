@@ -1,0 +1,14 @@
+"*":
+  core: {}
+  editor:
+    fontSize: 16
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  linter: {}
+  "linter-jscs": {}
+  welcome:
+    showOnStartup: false
