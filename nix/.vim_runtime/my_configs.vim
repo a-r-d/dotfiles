@@ -20,7 +20,12 @@ set number
 " this is pretty ugly with JS / JSON
 "set background=dark
 "colorscheme solarized
+colorscheme ir_black
 let g:airline_theme="kalisi"
+set gfn=Hack:h15,Source\ Code\ Pro:h13,Bitstream\ Vera\ Sans\ Mono:h12
+
+set foldmethod=indent
+set foldlevel=5
 
 """""""""""""""""""""""""""""""""""""
 "" Plugins configs
