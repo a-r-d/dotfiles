@@ -27,6 +27,7 @@ All of these features work on both Linux and Cygwin, they are configured a bit d
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   # only copy the zshrc dotfile on linux.
   cp ~/dotfiles/nix/.zshrc ~/.zshrc  
+  cp ~/dotfiles/nix/.bash_profile ~/.bash_profile
   chsh -s /bin/zsh
 
   # setup vim or refresh install
