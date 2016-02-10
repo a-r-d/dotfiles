@@ -12,6 +12,7 @@ alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
+alias fancy="git diff --color | diff-highlight | diff-so-fancy"
 
 httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grabs headers from web page
 
