@@ -11,6 +11,18 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
+"folding
+set foldmethod=indent
+set foldlevel=15
+
+
+
+""""""""""""""""""""""""""
+"" ctrlp.vim plugin
+"""""""""""""""""""""""""
+" defaults: https://github.com/ctrlpvim/ctrlp.vim/blob/master/autoload/ctrlp.vim
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|target|dist|build)|(\.(swp|ico|git|svn))$'
+
 
 """""""""""""""""""""""""""""""""""""
 " editor styling
