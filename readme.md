@@ -31,7 +31,8 @@ All of these features work on both Linux and Cygwin, they are configured a bit d
   chsh -s /bin/zsh
 
   # setup vim or refresh install
-  git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+  # just use the fork
+  git clone https://github.com/a-r-d/vimrc.git ~/.vim_runtime
   cd ~/.vim_runtime && python update_plugins.py && cd ..
   sh ~/.vim_runtime/install_awesome_vimrc.sh
   cp ~/dotfiles/nix/.vim_runtime/my_configs.vim ~/.vim_runtime/my_configs.vim
