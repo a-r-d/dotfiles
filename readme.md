@@ -93,6 +93,8 @@ git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
 git submodule update --init --recursive  
 # at this point you must have CMake installed
+sudo apt-get install python-dev
+sudo apt-get install CMake
 python install.py --tern-completer
 ```
 
