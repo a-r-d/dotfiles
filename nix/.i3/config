@@ -121,8 +121,8 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
-bindsym Ctrl+Alt+Left workspace prev
-bindsym Ctrl+Alt+Right workspace next
+bindsym Mod1+Ctrl+Left workspace prev
+bindsym Mod1+Ctrl+Right workspace next
 
 bindsym $mod+PageUp workspace prev
 bindsym $mod+PageDown workspace next
