@@ -140,3 +140,14 @@ npmglobals() {
 configgit() {
   git config --global core.editor nano
 }
+
+
+## flac utils
+alias ape2flac='find . -type f -name "*.ape"  -exec avconv -i '{}' '{}.flac' \;'
+alias flacsplit='find . -name "*.cue" -exec sh -c 'exec shnsplit -f "$1" -o flac -t "%n_%p-%t" "${1%.cue}.api.flac"' _ {} \;'
+alias fixunicodenames="find ./ -type f -print0 | \                                                                                 
+perl -n0e '$new = $_; if($new =~ s/[^[:ascii:]]/_/g) {
+  print(\"Renaming $_ to $new\n\"); rename($_, $new);
+}'"
+
+
